@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		057476CF29A5174F009FBB76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476CE29A5174F009FBB76 /* AppDelegate.swift */; };
 		057476D129A5174F009FBB76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476D029A5174F009FBB76 /* SceneDelegate.swift */; };
-		057476D329A5174F009FBB76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476D229A5174F009FBB76 /* ViewController.swift */; };
-		057476D629A5174F009FBB76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057476D429A5174F009FBB76 /* Main.storyboard */; };
 		057476D829A51752009FBB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057476D729A51752009FBB76 /* Assets.xcassets */; };
 		057476DB29A51752009FBB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057476D929A51752009FBB76 /* LaunchScreen.storyboard */; };
+		057476E729A51999009FBB76 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476E629A51999009FBB76 /* TableViewCell.swift */; };
+		057476E929A519CD009FBB76 /* BlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476E829A519CD009FBB76 /* BlePeripheral.swift */; };
+		057476EB29A519FD009FBB76 /* CBUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476EA29A519FD009FBB76 /* CBUUIDs.swift */; };
+		057476EE29A51E5D009FBB76 /* ScanningScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476ED29A51E5D009FBB76 /* ScanningScreen.swift */; };
+		057476F029A5242A009FBB76 /* ReportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057476EF29A5242A009FBB76 /* ReportScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		057476CB29A5174F009FBB76 /* MeterProIOAF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeterProIOAF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		057476CE29A5174F009FBB76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		057476D029A5174F009FBB76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		057476D229A5174F009FBB76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		057476D529A5174F009FBB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		057476D729A51752009FBB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		057476DA29A51752009FBB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		057476DC29A51752009FBB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		057476E629A51999009FBB76 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		057476E829A519CD009FBB76 /* BlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlePeripheral.swift; sourceTree = "<group>"; };
+		057476EA29A519FD009FBB76 /* CBUUIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDs.swift; sourceTree = "<group>"; };
+		057476ED29A51E5D009FBB76 /* ScanningScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningScreen.swift; sourceTree = "<group>"; };
+		057476EF29A5242A009FBB76 /* ReportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		057476CD29A5174F009FBB76 /* MeterProIOAF */ = {
 			isa = PBXGroup;
 			children = (
+				057476EC29A51D72009FBB76 /* Controllers */,
+				057476E529A5195F009FBB76 /* View */,
+				057476E429A51946009FBB76 /* Model */,
 				057476CE29A5174F009FBB76 /* AppDelegate.swift */,
 				057476D029A5174F009FBB76 /* SceneDelegate.swift */,
-				057476D229A5174F009FBB76 /* ViewController.swift */,
-				057476D429A5174F009FBB76 /* Main.storyboard */,
 				057476D729A51752009FBB76 /* Assets.xcassets */,
 				057476D929A51752009FBB76 /* LaunchScreen.storyboard */,
 				057476DC29A51752009FBB76 /* Info.plist */,
 			);
 			path = MeterProIOAF;
+			sourceTree = "<group>";
+		};
+		057476E429A51946009FBB76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				057476E829A519CD009FBB76 /* BlePeripheral.swift */,
+				057476EA29A519FD009FBB76 /* CBUUIDs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		057476E529A5195F009FBB76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				057476E629A51999009FBB76 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		057476EC29A51D72009FBB76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				057476ED29A51E5D009FBB76 /* ScanningScreen.swift */,
+				057476EF29A5242A009FBB76 /* ReportScreen.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +160,6 @@
 			files = (
 				057476DB29A51752009FBB76 /* LaunchScreen.storyboard in Resources */,
 				057476D829A51752009FBB76 /* Assets.xcassets in Resources */,
-				057476D629A5174F009FBB76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				057476D329A5174F009FBB76 /* ViewController.swift in Sources */,
+				057476E729A51999009FBB76 /* TableViewCell.swift in Sources */,
+				057476F029A5242A009FBB76 /* ReportScreen.swift in Sources */,
+				057476EB29A519FD009FBB76 /* CBUUIDs.swift in Sources */,
+				057476EE29A51E5D009FBB76 /* ScanningScreen.swift in Sources */,
+				057476E929A519CD009FBB76 /* BlePeripheral.swift in Sources */,
 				057476CF29A5174F009FBB76 /* AppDelegate.swift in Sources */,
 				057476D129A5174F009FBB76 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		057476D429A5174F009FBB76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				057476D529A5174F009FBB76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		057476D929A51752009FBB76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +320,9 @@
 				INFOPLIST_FILE = MeterProIOAF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +348,9 @@
 				INFOPLIST_FILE = MeterProIOAF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
